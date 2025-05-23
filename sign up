@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .signup-card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #777;
+            pointer-events: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 40px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -8px;
+            font-size: 12px;
+            color: #3498db;
+            background-color: white;
+            padding: 0 5px;
+            left: 10px;
+        }
+
+        .input-group .icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #777;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .login-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-card">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <span class="icon">&#x1F4E7;</span> </div>
+                <div class="input-group">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <span class="icon">&#x1F512;</span> </div>
+                <div class="input-group">
+                    <label for="confirm_password"></label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                    <span class="icon">&#x1F512;</span> </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="index.html">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
