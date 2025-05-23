@@ -1,0 +1,1 @@
+Esse projeto foi solicitado pelo meu professor afim de realizar praticas de um projeto integrador, o mesmo consiste em criar telas de de um site para cadastro de produtos, onde fiquei responsável pelo front-end, atualmente estou no 3° semestre e espero poder criar muitos novos projetos e melhorar minhas habilidades como desenvolvedor web
